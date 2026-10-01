@@ -15,6 +15,16 @@
 Тайлы собирает `tools/build_body_terrain.py` хранилища PlanetX
 из сеток PDS Geosciences Node.
 
+В папке `imagery/<тело>/{z}/{x}/{y}.jpg` лежат снимки других тел:
+Меркурия, Венеры, Юпитера, Ио, Европы, Ганимеда, Каллисто, Мимаса,
+Энцелада, Тефии, Дионы, Реи, Титана, Япета, Тритона, Цереры, Весты,
+Плутона и Харона. Это JPEG 256×256 в сетке Web Mercator, порядок XYZ,
+уровни 0-4, 0-5 или 0-6. Их нарезает `tools/build_body_imagery.py`
+хранилища PlanetX из глобальных мозаик USGS Astrogeology
+(planetarymaps.usgs.gov/mosaic) и NASA Photojournal (PIA07782 -
+Юпитер, PIA17214 - Мимас). Список мозаик и подписи - в
+`doc/SOURCES.md` хранилища PlanetX.
+
 Данные NASA находятся в общественном достоянии. При показе
 указывается источник: «NASA MGS MOLA MEGDR» для Марса и
 «NASA LRO LOLA GDR» для Луны.
