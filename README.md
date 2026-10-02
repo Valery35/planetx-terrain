@@ -24,6 +24,15 @@
 Юпитер, PIA17214 - Мимас). Список мозаик и подписи - в
 `doc/SOURCES.md` хранилища PlanetX.
 
+В папке `slab2/<код>.npz` лежат погружающиеся плиты 27 зон
+субдукции по модели USGS Slab2 (Hayes, 2018, doi:10.5066/F7PV6JNV).
+В файле зоны - глубина верхней поверхности плиты, толщина и падение
+на сетке 0.1°, узлы вне контура зоны USGS удалены. Файлы собирает
+`tools/build_slabs.py` хранилища PlanetX из архива
+Slab2Distribute_Mar2018.tar.gz. Модуль запрашивает файл зоны, когда
+разрез Земли её касается. Данные USGS находятся в общественном
+достоянии США, при показе указывается «Slabs: USGS Slab2».
+
 Данные NASA находятся в общественном достоянии. При показе
 указывается источник: «NASA MGS MOLA MEGDR» для Марса и
 «NASA LRO LOLA GDR» для Луны.
@@ -33,3 +42,5 @@
 Mars and Moon elevation tiles for the QGIS plugin PlanetX. Terrarium
 PNG tiles 256×256, Web Mercator XYZ, levels 0-5. Mars - NASA MGS MOLA
 MEGDR, Moon - NASA LRO LOLA GDR, public domain NASA data.
+Folder `slab2` holds subducting slabs of 27 zones from USGS Slab2
+(Hayes, 2018), public domain USGS data.
