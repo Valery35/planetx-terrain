@@ -57,3 +57,14 @@ Folder `slab2` holds subducting slabs of 27 zones from USGS Slab2
 (Hayes, 2018), public domain USGS data.
 Folder `paleo/merdith2021` holds 1-bit land maps for 0-1000 Ma in 5 Ma steps,
 built from the Merdith et al. 2021 model (CC BY 4.0) via the GPlates Web Service.
+
+В папке `rumsey` лежит каталог привязанных карт коллекции Дэвида Рамсея
+для окна «Карты Рамсея» модуля. `index.json` - все 56 618 карт: номер,
+рамка (запад, юг, восток, север), год, название, масштаб и клетка.
+`cells/<широта>_<долгота>.json` - подробности карт по клеткам 10° по
+середине рамки: адрес изображения IIIF, способ привязки, опорные точки
+и обрезка поля карты в пикселях. Каталог собирает `tools/build_rumsey.py`
+хранилища PlanetX из набора Стэнфорда «David Rumsey Map Collection:
+Georeferenced Maps Metadata» (purl.stanford.edu/ss311gz1992, CC0).
+Изображений карт здесь нет, модуль собирает их у пользователя из службы
+IIIF коллекции. Изображения коллекции - CC BY-NC-SA 3.0.
