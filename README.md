@@ -68,3 +68,17 @@ built from the Merdith et al. 2021 model (CC BY 4.0) via the GPlates Web Service
 Georeferenced Maps Metadata» (purl.stanford.edu/ss311gz1992, CC0).
 Изображений карт здесь нет, модуль собирает их у пользователя из службы
 IIIF коллекции. Изображения коллекции - CC BY-NC-SA 3.0.
+
+В папке `demo` лежат демо модуля PlanetX и программы
+[PlanetX Lite](https://github.com/Valery35/planetx-lite): сцены
+`*.planetx` и их крупные файлы - растры высот, слои GeoPackage,
+3D-модели. Раскладка та же, что в папке `planetx/demo` модуля. Модуль
+и Lite берут файл по адресу
+`https://raw.githubusercontent.com/Valery35/planetx-terrain/main/demo/<путь>`,
+когда открывается демо, и хранят его у себя. Сцены и файлы демо -
+GNU GPL 3 (`demo/LICENSE`), у чужих данных внутри свои условия -
+`demo/SOURCES.md`. Лицензия папки `demo` не распространяется
+на остальные папки хранилища.
+
+Folder `demo` holds PlanetX and PlanetX Lite demo scenes and their
+large files, GNU GPL 3, third-party terms in `demo/SOURCES.md`.
