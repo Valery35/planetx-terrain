@@ -82,3 +82,16 @@ GNU GPL 3 (`demo/LICENSE`), у чужих данных внутри свои у�
 
 Folder `demo` holds PlanetX and PlanetX Lite demo scenes and their
 large files, GNU GPL 3, third-party terms in `demo/SOURCES.md`.
+
+В папке `fonts` лежат шрифты Noto Sans SC, JP и KR для страницы
+PlanetX Lite на китайском, японском и корейском. Это обычное начертание
+переменных шрифтов Google Fonts (github.com/google/fonts, папки
+`ofl/notosanssc`, `notosansjp`, `notosanskr`), урезанное до знаков
+GB2312, JIS X 0208 и хангыля KS X 1001. Шрифты - SIL Open Font License
+1.1, текст - `fonts/OFL.txt`. Страница скачивает шрифт при первом
+выборе такого языка, программа берёт шрифт системы.
+
+Folder `fonts` holds Noto Sans SC, JP and KR, the regular weight of the
+Google Fonts variable fonts subset to GB2312, JIS X 0208 and KS X 1001
+Hangul, SIL Open Font License 1.1 (`fonts/OFL.txt`), for the PlanetX
+Lite web page.
