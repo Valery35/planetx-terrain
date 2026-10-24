@@ -1,0 +1,6 @@
+obs_title = NASA SVS Deep Star Maps 2020
+obs_copyright = NASA/Goddard Space Flight Center Scientific Visualization Studio. Gaia DR2: ESA/Gaia/DPAC
+hips_order = 4
+hips_tile_width = 512
+hips_tile_format = jpeg
+hips_frame = equatorial
