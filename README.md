@@ -95,3 +95,16 @@ Folder `fonts` holds Noto Sans SC, JP and KR, the regular weight of the
 Google Fonts variable fonts subset to GB2312, JIS X 0208 and KS X 1001
 Hangul, SIL Open Font License 1.1 (`fonts/OFL.txt`), for the PlanetX
 Lite web page.
+
+В папке `sky/starmap` лежит карта неба NASA SVS Deep Star Maps 2020
+(starmap_2020_32k, svs.gsfc.nasa.gov/4851) тайлами HiPS - JPEG 512×512
+в сетке HEALPix, порядки 0-4, `Norder3/Allsky.jpg` и `properties`.
+Яркость тайлов - та же, что у картинки Млечного пути модуля. Тайлы
+режет `tools/build_starmap.py` хранилища PlanetX из файла EXR. Модуль
+и Lite показывают карту в виде неба между Млечным путём и снимками DSS.
+Данные NASA находятся в общественном достоянии, звёзды карты - Gaia DR2.
+При показе указывается «NASA/Goddard SVS, Gaia DR2: ESA/Gaia/DPAC».
+
+Folder `sky/starmap` holds the NASA SVS Deep Star Maps 2020 sky map
+as HiPS tiles (JPEG 512×512, HEALPix orders 0-4). NASA data is in the
+public domain, stars from Gaia DR2 (ESA/Gaia/DPAC).
