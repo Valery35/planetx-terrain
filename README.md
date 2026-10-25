@@ -97,6 +97,13 @@ Lite web page.
 Данные NASA находятся в общественном достоянии, звёзды карты - Gaia DR2.
 При показе указывается «NASA/Goddard SVS, Gaia DR2: ESA/Gaia/DPAC».
 
+Файл `sky/sky_2020_8k.jpg` - картинка неба 8192×4096 с Млечным путём,
+равнопромежуточная, прямое восхождение 0h у левого края, север
+вверху, из NASA SVS Deep Star Maps 2020 (`tools/build_sky.py` хранилища
+PlanetX). Это копия файла выпуска `sky-2020` хранилища PlanetX: файлы
+выпусков GitHub не отдаёт странице (CORS). Данные NASA - общественное
+достояние, при показе указывается «NASA/Goddard SVS».
+
 Folder `sky/starmap` holds the NASA SVS Deep Star Maps 2020 sky map
 as HiPS tiles (JPEG 512×512, HEALPix orders 0-4). NASA data is in the
 public domain, stars from Gaia DR2 (ESA/Gaia/DPAC).
