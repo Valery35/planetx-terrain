@@ -1,20 +1,16 @@
 # PlanetX terrain
 
-Тайлы высот Марса и Луны для модуля QGIS
-[PlanetX](https://github.com/Valery35/planetx). Модуль читает их
-по одному тайлу по адресу
-`https://raw.githubusercontent.com/Valery35/planetx-terrain/main/<тело>/{z}/{x}/{y}.png`.
+Данные модуля QGIS [PlanetX](https://github.com/Valery35/planetx)
+и программы [PlanetX Lite](https://github.com/Valery35/planetx-lite):
+снимки тел, плиты, палеогеография, каталог Рамсея, демо, шрифты, карта
+неба. Модуль и Lite читают их по адресу
+`https://raw.githubusercontent.com/Valery35/planetx-terrain/main/<путь>`.
 
-| Папка | Тело | Источник | Уровни | Шаг высот |
-|---|---|---|---|---|
-| `mars` | Марс | NASA MGS MOLA MEGDR, 32 точки на градус, высоты над ареоидом | 0-5 | 10 м |
-| `moon` | Луна | NASA LRO LOLA GDR, 64 точки на градус, высоты над сферой 1737.4 км | 0-5 | 20 м |
-
-Тайлы - PNG 256×256 в сетке Web Mercator, порядок XYZ. Высота
-в метрах записана как Terrarium: `R * 256 + G + B / 256 - 32768`.
-Тайлы собирает `tools/build_body_terrain.py` хранилища PlanetX
-из сеток PDS Geosciences Node.
-
+Высоты Марса и Луны отсюда убраны 25 октября 2026 года. Теперь они
+подробнее, уровни 0-7, в хранилище
+[planetx-bodies-terrain](https://github.com/Valery35/planetx-bodies-terrain),
+снимки Марса и Луны - в
+[planetx-bodies-imagery](https://github.com/Valery35/planetx-bodies-imagery).
 В папке `imagery/<тело>/{z}/{x}/{y}.jpg` лежат снимки других тел:
 Меркурия, Венеры, Юпитера, Ио, Европы, Ганимеда, Каллисто, Мимаса,
 Энцелада, Тефии, Дионы, Реи, Титана, Япета, Цереры и Весты. Это JPEG 256×256 в сетке Web Mercator, порядок XYZ,
@@ -44,15 +40,11 @@ zenodo.org/records/4485738. Узкие замкнутые полосы воды 
 суши закрашены сушей. Указатель возрастов - `index.json`. При показе
 указывается «Paleogeography: GPlates Web Service, Merdith et al. 2021».
 
-Данные NASA находятся в общественном достоянии. При показе
-указывается источник: «NASA MGS MOLA MEGDR» для Марса и
-«NASA LRO LOLA GDR» для Луны.
-
 ---
 
-Mars and Moon elevation tiles for the QGIS plugin PlanetX. Terrarium
-PNG tiles 256×256, Web Mercator XYZ, levels 0-5. Mars - NASA MGS MOLA
-MEGDR, Moon - NASA LRO LOLA GDR, public domain NASA data.
+Data of the QGIS plugin PlanetX and PlanetX Lite. Mars and Moon heights
+moved on 25 October 2026 to planetx-bodies-terrain (levels 0-7), Mars and
+Moon imagery is in planetx-bodies-imagery.
 Folder `slab2` holds subducting slabs of 27 zones from USGS Slab2
 (Hayes, 2018), public domain USGS data.
 Folder `paleo/merdith2021` holds 1-bit land maps for 0-1000 Ma in 5 Ma steps,
